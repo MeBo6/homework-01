@@ -1,42 +1,89 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Magazine Post</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
+    <body class="font-['Google_Sans'] px-[80px] pt-[64px] bg-white">
+        <div class="m-auto max-w-[1680px]">
+            <header class="mb-[32px]">
+                <div class="flex items-center justify-between pb-4">
+                    <img
+                        class="max-w-[209px] max-h-[18px]"
+                        src="docs/Fyrre Magazine.svg"
+                        alt="Fyrre Magazine"
+                    />
+                    <nav class="flex items-center gap-[24px]">
+                        <a href="#" class="text-[20px]">Magazine</a>
+                        <a href="#" class="text-[20px]">Authors</a>
+                        <a href="#" class="text-[20px]">Podcast</a>
 
-<body class="m-[4%]">
-    <div class="max-w-6xl m-auto">
-        <header class="mb-2 flex justify-between">
-            <h1 class="font-bold">FYRRE MAGAZINE</h1>
-            <nav class="flex items-center gap-5">
-                <a>Magazine</a>
-                <a>Authors</a>
-                <a>Podcast</a>
-                <img class="h-[14px] w-[14px]" src="docs/Vector.png" alt="" />
-                <img class="h-[14px] w-[14px]" src="docs/ri_twitter-fill.png" alt="" />
-                <img class="h-[14px] w-[14px]" src="docs/ri_youtube-fill.png" alt="" />
-                <img class="h-[14px] w-[14px]" src="docs/ri_rss-fill.png" alt="" />
-            </nav>
-        </header>
-        <hr class="mb-5 w-[100%] m-auto" />
-        <div class="flex justify-between">
-            <p class="font-semibold">GO BACK</p>
-            <p class="font-bold text-[27px]">MAGAZINE</p>
+                        <hr class="w-[15px] h-[1px] border-black" />
+
+                        <div class="flex items-center gap-[12px]">
+                            <img
+                                class="cursor-pointer h-[16.67px] w-[16.67px]"
+                                src="docs/Vector.svg"
+                                alt="Instagram"
+                            />
+                            <img
+                                class="cursor-pointer h-[17px] w-[13.8px]"
+                                src="docs/Vector (1).svg"
+                                alt="Twitter"
+                            />
+                            <img
+                                class="cursor-pointer h-[16.67px] w-[13.33px]"
+                                src="docs/Vector (2).svg"
+                                alt="YouTube"
+                            />
+                            <img
+                                class="cursor-pointer h-[15px] w-[15px]"
+                                src="docs/Vector (3).svg"
+                                alt="RSS"
+                            />
+                        </div>
+                    </nav>
+                </div>
+
+                <hr class="w-[100%] border-black" />
+            </header>
+
+            <section class="flex items-center justify-between mb-[96px]">
+                <button class="flex items-center gap-[8px] cursor-pointer">
+                    <img
+                        class="w-[16px] h-[15.56px]"
+                        src="docs/Vector (4).svg"
+                        alt=""
+                    />
+                    <p class="font-semibold text-[16px]">GO BACK</p>
+                </button>
+
+                <p class="font-semibold text-[32px] leading-[1.1]">MAGAZINE</p>
+            </section>
+
+            <main class="grid grid-cols-2 gap-[80px] items-start">
+                <h1
+                    class="font-semibold text-[104px] leading-[1.1] tracking-normal max-w-[707.5px] uppercase"
+                >
+                    HOPE<br />DIES LAST
+                </h1>
+
+                <p
+                    class="font-medium text-[20px] leading-[1.8] max-w-[707.5px]"
+                >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare
+                    arcu dui vivamus arcu felis bibendum ut. Porttitor leo a
+                    diam.
+                </p>
+            </main>
         </div>
-        <main class="flex justify-between mt-[5%]">
-            <h1 class="font-bold text-[54px] w-65 leading-none">HOPE DIES LAST</h1>
-            <p class="w-[43%]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas
-                dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu
-                felis bibendum ut. Porttitor leo a diam.
-            </p>
-        </main>
-    </div>
-</body>
-
+    </body>
 </html>
